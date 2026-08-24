@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee7dc;
+  color: #3d3028;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  width: 100%;
+  max-width: 650px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #fbf8f2;
+  box-shadow: 0 0 40px rgba(60, 45, 30, 0.08);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  text-align: center;
+  padding: 28px 20px 18px;
+  border-bottom: 1px solid #e4dbcf;
+}
+
+.logo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  color: #392c24;
+}
+
+.logo span {
+  font-style: italic;
+}
+
+.header-date {
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #806f61;
+}
+
+
+/* =========================
+   GENERELT
+========================= */
+
+main {
+  min-height: calc(100vh - 110px);
+  padding-bottom: 90px;
+}
+
+.page {
+  display: none;
+  padding: 30px 24px 40px;
+}
+
+.page.active {
+  display: block;
+}
+
+.page-header {
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #8a7565;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+p {
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FORSIDE
+========================= */
+
+.hero {
+  min-height: calc(100vh - 180px);
+  padding: 70px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(55px, 15vw, 90px);
+  line-height: 0.9;
+  margin: 15px 0 25px;
+}
+
+.hero h1 span {
+  font-style: italic;
+}
+
+.hero-date {
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.intro {
+  max-width: 420px;
+  margin: 20px auto 30px;
+}
+
+
+/* =========================
+   KNAPPER
+========================= */
+
+.primary-button {
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  background: #3d3028;
+  color: white;
+  padding: 16px 22px;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background: #59473a;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   DAGEN
+========================= */
+
+.day-block {
+  margin-bottom: 55px;
+}
+
+.date-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #8a7565;
+  margin-bottom: 10px;
+}
+
+.event {
+  display: flex;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid #e4dbcf;
+}
+
+.event-time {
+  min-width: 58px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.event-info span {
+  color: #806f61;
+  font-size: 14px;
+}
+
+
+/* =========================
+   INFORMASJON
+========================= */
+
+.info-card {
+  background: #f1ebe2;
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
+.info-card h3 {
+  margin-top: 0;
+}
+
+.info-card p {
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   SKJEMA
+========================= */
+
+.form-section {
+  margin-bottom: 30px;
+  padding: 22px;
+  background: #f1ebe2;
+}
+
+.form-section h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 16px 0 7px;
+  font-size: 13px;
+  color: #57473b;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #d4c8ba;
+  border-radius: 0;
+  background: #fff;
+  color: #3d3028;
+  padding: 13px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #8a7565;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-section .primary-button {
+  margin-top: 15px;
+}
+
+
+/* =========================
+   SVAR SENDT
+========================= */
+
+.success-message {
+  display: none;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-message h3 {
+  font-size: 32px;
+}
+
+
+/* =========================
+   BUNNMENY
+========================= */
+
+.bottom-nav {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 650px;
+
+  display: flex;
+  justify-content: space-around;
+
+  background: rgba(251, 248, 242, 0.97);
+  border-top: 1px solid #ded5ca;
+
+  padding: 7px 5px;
+
+  backdrop-filter: blur(8px);
+}
+
+.bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #655548;
+  font-size: 10px;
+  padding: 7px 3px;
+}
+
+.bottom-nav button span {
+  display: block;
+  font-size: 19px;
+  margin-bottom: 3px;
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 500px) {
+
+  .header {
+    padding-top: 22px;
+  }
+
+  .logo {
+    font-size: 27px;
+  }
+
+  .page {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .hero {
+    padding-top: 45px;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  .form-section {
+    padding: 18px;
+  }
+
+}
+
+
+/* =========================
+   STØRRE SKJERM
+========================= */
+
+@media (min-width: 651px) {
+
+  body {
+    padding: 30px 0;
+  }
+
+  .app {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+}
