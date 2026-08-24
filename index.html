@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kjersti & Morten</title>
+
+  <meta
+    name="description"
+    content="Bryllupshelgen til Kjersti & Morten – 6.–7. august 2027"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+      <div class="logo">
+        Kjersti <span>&</span> Morten
+      </div>
+
+      <div class="header-date">
+        6.–7. august 2027
+      </div>
+
+    </header>
+
+
+    <!-- INNHOLD -->
+
+    <main id="app">
+
+
+      <!-- HJEM -->
+
+      <section id="home" class="page active">
+
+        <div class="hero">
+
+          <div class="eyebrow">
+            BRYLLUPSHELG
+          </div>
+
+          <h1>
+            Kjersti<br>
+            <span>&</span> Morten
+          </h1>
+
+          <p class="hero-date">
+            6.–7. august 2027
+          </p>
+
+          <p class="intro">
+            Velkommen til bryllupshelgen vår!
+            Vi gleder oss til å feire sammen med dere.
+          </p>
+
+          <button
+            class="primary-button"
+            onclick="showPage('rsvp')"
+          >
+            SVAR PÅ INVITASJONEN
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- DAGEN -->
+
+      <section id="day" class="page">
+
+        <div class="page-header">
+          <div class="eyebrow">
+            BRYLLUPSHELGEN
+          </div>
+
+          <h2>Dagen</h2>
+        </div>
+
+
+        <div class="day-block">
+
+          <div class="date-label">
+            FREDAG 6. AUGUST
+          </div>
+
+          <h3>
+            Quiz på Låven på Staup
+          </h3>
+
+          <p>
+            Vi starter bryllupshelgen med quiz
+            på Låven på Staup.
+          </p>
+
+          <div class="event">
+
+            <div class="event-time">
+              19:00
+            </div>
+
+            <div class="event-info">
+              <strong>Quiz</strong>
+              <span>Låven på Staup</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="day-block">
+
+          <div class="date-label">
+            LØRDAG 7. AUGUST
+          </div>
+
+          <h3>
+            Bryllupsdagen
+          </h3>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              13:00
+            </div>
+
+            <div class="event-info">
+              <strong>Sermoni</strong>
+              <span>Levanger videregående skole</span>
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              14:00
+            </div>
+
+            <div class="event-info">
+              <strong>Mingling</strong>
+              <span>Levanger videregående skole</span>
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              16:00
+            </div>
+
+            <div class="event-info">
+              <strong>Middag</strong>
+              <span>Levanger videregående skole</span>
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              21:00
+            </div>
+
+            <div class="event-info">
+              <strong>Fest</strong>
+              <span>Levanger videregående skole</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- PRAKTISK -->
+
+      <section id="practical" class="page">
+
+        <div class="page-header">
+          <div class="eyebrow">INFO</div>
+          <h2>Praktisk</h2>
+        </div>
+
+
+        <div class="info-card">
+
+          <h3>Fredag 6. august</h3>
+
+          <p>
+            Quiz på Låven på Staup.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <h3>Lørdag 7. august</h3>
+
+          <p>
+            Bryllupsdagen arrangeres på
+            Levanger videregående skole.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <h3>Transport</h3>
+
+          <p>
+            Informasjon kommer.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <h3>Parkering</h3>
+
+          <p>
+            Informasjon kommer.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <h3>Overnatting</h3>
+
+          <p>
+            Informasjon kommer.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- SVAR -->
+
+      <section id="rsvp" class="page">
+
+        <div class="page-header">
+
+          <div class="eyebrow">
+            VI HÅPER DU KOMMER
+          </div>
+
+          <h2>Svar</h2>
+
+          <p>
+            Fyll ut skjemaet under.
+          </p>
+
+        </div>
+
+
+        <form id="rsvpForm">
+
+
+          <div class="form-section">
+
+            <h3>Om deg</h3>
+
+
+            <label for="firstName">
+              Fornavn
+            </label>
+
+            <input
+              id="firstName"
+              name="firstName"
+              type="text"
+              required
+            >
+
+
+            <label for="lastName">
+              Etternavn
+            </label>
+
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              required
+            >
+
+
+            <label for="email">
+              E-post
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+            >
+
+          </div>
+
+
+          <!-- FREDAG -->
+
+          <div class="form-section">
+
+            <div class="date-label">
+              FREDAG 6. AUGUST
+            </div>
+
+            <h3>
+              Quiz på Låven på Staup
+            </h3>
+
+            <label for="friday">
+              Kommer du på quiz?
+            </label>
+
+            <select
+              id="friday"
+              name="friday"
+              required
+            >
+
+              <option value="">
+                Velg
+              </option>
+
+              <option value="Ja">
+                Ja, jeg kommer!
+              </option>
+
+              <option value="Nei">
+                Nei, dessverre
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- LØRDAG -->
+
+          <div class="form-section">
+
+            <div class="date-label">
+              LØRDAG 7. AUGUST
+            </div>
+
+            <h3>
+              Bryllupsdagen
+            </h3>
+
+
+            <label for="saturday">
+              Kommer du på lørdag?
+            </label>
+
+            <select
+              id="saturday"
+              name="saturday"
+              required
+            >
+
+              <option value="">
+                Velg
+              </option>
+
+              <option value="Ja">
+                Ja!
+              </option>
+
+              <option value="Nei">
+                Nei, dessverre
+              </option>
+
+            </select>
+
+
+            <label for="ceremony">
+              Kommer du til seremonien?
+            </label>
+
+            <select
+              id="ceremony"
+              name="ceremony"
+            >
+
+              <option value="Ja">Ja</option>
+              <option value="Nei">Nei</option>
+
+            </select>
+
+
+            <label for="mingling">
+              Blir du med på minglingen?
+            </label>
+
+            <select
+              id="mingling"
+              name="mingling"
+            >
+
+              <option value="Ja">Ja</option>
+              <option value="Nei">Nei</option>
+
+            </select>
+
+
+            <label for="dinner">
+              Blir du med på middagen?
+            </label>
+
+            <select
+              id="dinner"
+              name="dinner"
+            >
+
+              <option value="Ja">Ja</option>
+              <option value="Nei">Nei</option>
+
+            </select>
+
+
+            <label for="party">
+              Blir du med på festen?
+            </label>
+
+            <select
+              id="party"
+              name="party"
+            >
+
+              <option value="Ja">Ja</option>
+              <option value="Nei">Nei</option>
+
+            </select>
+
+          </div>
+
+
+          <!-- MAT -->
+
+          <div class="form-section">
+
+            <h3>Mat</h3>
+
+
+            <label for="food">
+              Matvalg
+            </label>
+
+            <select
+              id="food"
+              name="food"
+            >
+
+              <option value="Kjøtt">
+                Kjøtt
+              </option>
+
+              <option value="Vegetar">
+                Vegetar
+              </option>
+
+              <option value="Annet">
+                Annet
+              </option>
+
+            </select>
+
+
+            <label for="allergies">
+              Allergier eller intoleranser
+            </label>
+
+            <textarea
+              id="allergies"
+              name="allergies"
+              placeholder="Skriv inn eventuelle allergier..."
+            ></textarea>
+
+          </div>
+
+
+          <!-- TRANSPORT -->
+
+          <div class="form-section">
+
+            <h3>Transport</h3>
+
+
+            <label for="transport">
+              Trenger du transport?
+            </label>
+
+            <select
+              id="transport"
+              name="transport"
+            >
+
+              <option value="Nei">
+                Nei
+              </option>
+
+              <option value="Ja">
+                Ja
+              </option>
+
+            </select>
+
+
+            <label for="pickup">
+              Hvor skal du hentes?
+            </label>
+
+            <input
+              id="pickup"
+              name="pickup"
+              type="text"
+            >
+
+          </div>
+
+
+          <!-- OVERNATTING -->
+
+          <div class="form-section">
+
+            <h3>Overnatting</h3>
+
+            <input
+              id="accommodation"
+              name="accommodation"
+              type="text"
+              placeholder="F.eks. hotell / ordner selv"
+            >
+
+          </div>
+
+
+          <!-- ANNET -->
+
+          <div class="form-section">
+
+            <label for="message">
+              Er det noe annet vi bør vite?
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+            ></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="primary-button"
+          >
+            SEND SVAR
+          </button>
+
+
+        </form>
+
+
+        <div
+          id="rsvpSuccess"
+          class="success-message"
+        >
+
+          <h3>
+            Tusen takk ❤️
+          </h3>
+
+          <p>
+            Svaret ditt er registrert.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- MENY -->
+
+      <section id="menu" class="page">
+
+        <div class="page-header">
+
+          <div class="eyebrow">
+            BRYLLUPSMIDDAG
+          </div>
+
+          <h2>Meny</h2>
+
+        </div>
+
+        <div class="info-card">
+
+          <p>
+            Menyen kommer.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- BORDPLASSERING -->
+
+      <section id="seating" class="page">
+
+        <div class="page-header">
+
+          <div class="eyebrow">
+            FINN PLASSEN DIN
+          </div>
+
+          <h2>Bordplassering</h2>
+
+        </div>
+
+        <div class="info-card">
+
+          <p>
+            Bordplasseringen publiseres
+            når den er klar.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- ØNSKELISTE -->
+
+      <section id="wishes" class="page">
+
+        <div class="page-header">
+
+          <div class="eyebrow">
+            ØNSKER
+          </div>
+
+          <h2>Ønskeliste</h2>
+
+        </div>
+
+        <p>
+          Det viktigste for oss er at dere
+          vil feire dagen sammen med oss.
+        </p>
+
+        <p>
+          Hvis dere likevel ønsker å gi oss
+          noe, finner dere ønskelisten vår her.
+        </p>
+
+        <div class="info-card">
+
+          <h3>
+            Ønskelisten kommer
+          </h3>
+
+          <p>
+            Vi legger ut ønskelisten her
+            når den er klar.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- TOASTMASTERE -->
+
+      <section id="toastmasters" class="page">
+
+        <div class="page-header">
+
+          <div class="eyebrow">
+            TALER & INNSLAG
+          </div>
+
+          <h2>Toastmastere</h2>
+
+        </div>
+
+        <p>
+          Våre toastmastere skal hjelpe oss
+          gjennom kvelden og sørge for at
+          taler, innslag og andre påfunn
+          kommer på rett tidspunkt.
+        </p>
+
+        <div class="info-card">
+
+          <h3>
+            Toastmaster
+          </h3>
+
+          <p>
+            Navn kommer.
+          </p>
+
+          <p>
+            Kontaktinformasjon kommer.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <h3>
+            Toastmaster
+          </h3>
+
+          <p>
+            Navn kommer.
+          </p>
+
+          <p>
+            Kontaktinformasjon kommer.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- GJESTEBOK -->
+
+      <section id="guestbook" class="page">
+
+        <div class="page-header">
+
+          <div class="eyebrow">
+            EN HILSEN
+          </div>
+
+          <h2>Gjestebok</h2>
+
+        </div>
+
+        <p>
+          Legg gjerne igjen en hilsen
+          til Kjersti & Morten ❤️
+        </p>
+
+
+        <div class="form-section">
+
+          <label for="guestbookName">
+            Navnet ditt
+          </label>
+
+          <input
+            id="guestbookName"
+            type="text"
+          >
+
+
+          <label for="guestbookMessage">
+            Hilsen
+          </label>
+
+          <textarea
+            id="guestbookMessage"
+          ></textarea>
+
+
+          <button
+            class="primary-button"
+          >
+            SEND HILSEN
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- BILDER -->
+
+      <section id="photos" class="page">
+
+        <div class="page-header">
+
+          <div class="eyebrow">
+            BRYLLUPSHELGEN
+          </div>
+
+          <h2>Bilder</h2>
+
+        </div>
+
+        <p>
+          Her kan vi samle bilder fra
+          bryllupshelgen.
+        </p>
+
+        <div class="info-card">
+
+          <p>
+            Bildefunksjonen kommer.
+          </p>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+
+    <!-- BUNNMENY -->
+
+    <nav class="bottom-nav">
+
+      <button onclick="showPage('home')">
+        <span>⌂</span>
+        Hjem
+      </button>
+
+      <button onclick="showPage('day')">
+        <span>♡</span>
+        Dagen
+      </button>
+
+      <button onclick="showPage('practical')">
+        <span>⌖</span>
+        Praktisk
+      </button>
+
+      <button onclick="showPage('rsvp')">
+        <span>✓</span>
+        Svar
+      </button>
+
+    </nav>
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
